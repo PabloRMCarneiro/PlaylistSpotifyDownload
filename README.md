@@ -1,4 +1,4 @@
-﻿# README - Executando o projeto no Windows
+# README - Executando o projeto no Windows
 
 Este é um guia passo a passo para executar o projeto no Windows. O projeto utiliza a biblioteca Spotipy, YoutubeSearch, MoviePy, Pytube e Tkinter para baixar músicas de uma playlist do Spotify a partir dos links do YouTube.
 
@@ -81,12 +81,14 @@ Siga estas etapas para configurar o ambiente e executar o projeto:
 5. Instale as dependências: Use o gerenciador de pacotes `pip` para instalar as dependências necessárias. Execute o seguinte comando para instalar as dependências:
 
    ```bash
-   pip install spotipy youtube-search moviepy pytube
+   pip install spotipy youtube-search moviepy pytube3 tkinter
    ```
 
-6. Configure as credenciais do Spotify: Antes de executar o projeto, você precisa configurar as credenciais do cliente do Spotify. Substitua as variáveis `client_id` e `client_secret` no código-fonte pelo seu ID de cliente e segredo de cliente, respectivamente.
+6. Configure as credenciais do Spotify: Antes de executar o projeto, você precisa configurar as credenciais do cliente do Spotify. Acesse o [Dashboard de Desenvolvedor do Spotify](https://developer.spotify.com/dashboard/) e faça login ou crie uma conta. Crie um novo aplicativo e obtenha o ID do cliente e o segredo do cliente. Substitua as variáveis `client_id` e `client_secret` no código-fonte pelo seu ID de cliente e segredo de cliente, respectivamente.
 
-7. Execute o projeto: Após concluir as etapas acima, você está pronto para executar o projeto. Use o seguinte comando para iniciar a execução:
+7. Configure o link da playlist do Spotify: No código-fonte, substitua o valor da variável `playlist_url` pelo link da playlist do Spotify que você deseja baixar.
+
+8. Execute o projeto: Após concluir as etapas acima, você está pronto para executar o projeto. Use o seguinte comando para iniciar a execução:
 
    ```bash
    python seu_arquivo.py
@@ -94,10 +96,10 @@ Siga estas etapas para configurar o ambiente e executar o projeto:
 
    Certifique-se de substituir `seu_arquivo.py` pelo nome do arquivo que contém o código-fonte do projeto.
 
-8. Selecione o diretório de download: Quando o projeto for iniciado, uma janela de diálogo será exibida para selecionar o diretório onde as músicas serão baixadas. Navegue até o diretório desejado e clique em "OK".
+9. Selecione o diretório de download: Quando o projeto for iniciado, uma janela de diálogo será exibida para selecionar o diretório onde as músicas serão baixadas. Navegue até o diretório desejado e clique em "OK".
 
-9. Aguarde o processo de download: O projeto começará a pesquisar os links do YouTube para cada faixa da playlist do Spotify e baixará as músicas correspondentes no diretório selecionado. Aguarde até que todas as músicas sejam baixadas.
+10. Aguarde o processo de download: O projeto começará a pesquisar os links do YouTube para cada faixa da playlist do Spotify e baixará as músicas correspondentes no diretório selecionado. Aguarde até que todas as músicas sejam baixadas.
 
-10. Verifique as músicas baixadas: Após o término do processo de download, verifique o diretório selecionado para encontrar as músicas baixadas. As músicas serão nomeadas no formato `<nome_da_faixa>.mp3`.
+11. Verifique as músicas baixadas: Após o término do processo de download, verifique o diretório selecionado para encontrar as músicas baixadas. As músicas serão nomeadas no formato `<nome_da_faixa>.mp3`.
 
-Isso conclui as etapas para executar o projeto no Windows. Se você seguir as instruções acima corretamente, poderá baixar músicas de uma playlist do Spotify usando os links do YouTube.
+Observação: O código está setada para buscar as músicas Extended version ( versão extendida ), se desejar a normal na linha 49 retire " - Extended mix audio" da string.
