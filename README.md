@@ -81,7 +81,7 @@ Siga estas etapas para configurar o ambiente e executar o projeto:
 5. Instale as dependências: Use o gerenciador de pacotes `pip` para instalar as dependências necessárias. Execute o seguinte comando para instalar as dependências:
 
    ```bash
-   pip install spotipy youtube-search moviepy pytube3 tkinter
+   pip install spotipy youtube-search moviepy pytube
    ```
 
 6. Configure as credenciais do Spotify: Antes de executar o projeto, você precisa configurar as credenciais do cliente do Spotify. Acesse o [Dashboard de Desenvolvedor do Spotify](https://developer.spotify.com/dashboard/) e faça login ou crie uma conta. Crie um novo aplicativo e obtenha o ID do cliente e o segredo do cliente. Substitua as variáveis `client_id` e `client_secret` no código-fonte pelo seu ID de cliente e segredo de cliente, respectivamente.
