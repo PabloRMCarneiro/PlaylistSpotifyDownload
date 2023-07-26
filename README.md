@@ -102,4 +102,3 @@ Siga estas etapas para configurar o ambiente e executar o projeto:
 
 11. Verifique as músicas baixadas: Após o término do processo de download, verifique o diretório selecionado para encontrar as músicas baixadas. As músicas serão nomeadas no formato `<nome_da_faixa>.mp3`.
 
-Observação: O código está setada para buscar as músicas Extended version ( versão extendida ), se desejar a normal na linha 49 retire " - Extended mix audio" da string.
